@@ -153,18 +153,8 @@ Use this command ```sudo dpkg-reconfigure tzdata``` to set the UTC Time
 
 `engine = create_engine('postgresql://catalog:catalog@localhost/catalog')`
 
-### Step 2: Update your Google OAuth Credentials
-1. Go to [Google Developers Console](https://console.developers.google.com)
-2. Select your project. I recommend creating new credentials for this.
-3. Create an OAuth Client ID (under the Credentials tab), and add your instance host name
-http://ec2-xx-xxx-xxx-xxx.<REGION>.compute.amazonaws.com as authorized JavaScript
-origins.
-4. http://ec2-xx-xxx-xxx-xxx.<REGION>.compute.amazonaws.com/cuisines
-as authorized redirect URI.
-5. Download the new JSON file, and replace the one in ```/var/www/catalog/WorldCuisines```
-6. Replace the new client ID in the ```templates/login.html```
 
-### Step 3: Installing Dependencies
+### Step 2: Installing Dependencies
 - While logged in as `grader`, install pip: `sudo apt-get install python-pip`.
 - Install the virtual environment: `sudo apt-get install python-virtualenv`
 - Change to the `/var/www/catalog/Catalog/` directory.
@@ -181,7 +171,7 @@ as authorized redirect URI.
   sudo -H pip install psycopg2
   ```
 
-### Step 4: Setup a virtual host
+### Step 3: Setup a virtual host
 
 -Create `/etc/apache2/sites-available/catalog.conf` and add the
 following lines to configure the virtual host:
@@ -214,7 +204,7 @@ following lines to configure the virtual host:
 
 - Reload Apache: `sudo service apache2 reload`.
 
-### Step 5: Set up the Flask application
+### Step 4: Set up the Flask application
 
 - Create `/var/www/catalog/catalog.wsgi` file add the following lines:
 
