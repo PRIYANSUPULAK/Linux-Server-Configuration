@@ -90,7 +90,7 @@ sudo apt-get upgrade
 - Create a file named `grader` in `/etc/sudoers.d`
 - Add the following line to it
 
-```grader  ALL=(ALL:ALL) ALL```
+```graders  ALL=(ALL:ALL) ALL```
 
 ### Step 3: Use the key-gen to generate a key pair for grader
 - On your computer:
