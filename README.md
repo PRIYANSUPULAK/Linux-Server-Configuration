@@ -9,7 +9,7 @@ A baseline installation of a Linux server is prepared to host web applications. 
    created earlier in this Nanodegree program.
 4. The database server is [PostgreSQL](https://www.postgresql.org/).
 
-Link to Application: ~~http://http://13.233.84.254.xip.io~~
+Link to Application: (http://13.233.84.254.xip.io)
 
 ## Setting up your instance
 
